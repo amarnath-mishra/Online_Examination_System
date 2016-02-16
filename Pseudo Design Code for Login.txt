@@ -1,28 +1,86 @@
 --------For Authentication and Authorisation--------
+
+For student:
+
+
 Show Two Options--
 1.Registration(signup)
 2.Login (signin)
 
-if user already not have an account 			//signup process
+if Student already not have an account 			//signup process
 {
-User Enter its credentials in Registraion Forms.
-   if all necessary paramentres filled 
+Student Enter its credentials in Registration Forms--
+
+	a:name
+	b:Username
+	c:password
+	d:age
+	e:gender
+	......etc.
+	
+	Submit.
+   if all necessary parametres filled 
 	{
 	Show Successful message.
 	}
    else
 	{
-	show error msg for that box.
+	show error messages for that box.
 	}
-Else							//signin process
+	
+Else							//Signin process
 {
  User Enters his Login And password 
-  if (Correct)
+  if (User-name and password is Correct)
+	{
+	Show Successful Login message.
+	}
+   else
+	{
+	show error message for LoginID/Password.
+	and ask to try again.
+	}
+}
+
+For Examiner:
+
+
+Show Two Options--
+1.Registration(signup)
+2.Login (signin)
+
+if Examiner already not have an account 			//signup process
+{
+Examiner Enter its credentials in Registration Forms--
+
+	a:name
+	b:Username
+	c:password
+	d:department
+	d:age
+	e:gender
+	......etc.
+	
+	Submit.
+   if all necessary parametres filled 
 	{
 	Show Successful message.
 	}
    else
 	{
-	show error msg for loginID/Password.
+	show error messages for that box.
+	}
+	
+Else							//Signin process
+{
+ User Enters his Login And password 
+  if (User-name and password is Correct)
+	{
+	Show Successful Login message.
+	}
+   else
+	{
+	show error message for LoginID/Password.
 	and ask to try again.
 	}
+}
