@@ -1,0 +1,28 @@
+--------For Authentication and Authorisation--------
+Show Two Options--
+1.Registration(signup)
+2.Login (signin)
+
+if user already not have an account 			//signup process
+{
+User Enter its credentials in Registraion Forms.
+   if all necessary paramentres filled 
+	{
+	Show Successful message.
+	}
+   else
+	{
+	show error msg for that box.
+	}
+Else							//signin process
+{
+ User Enters his Login And password 
+  if (Correct)
+	{
+	Show Successful message.
+	}
+   else
+	{
+	show error msg for loginID/Password.
+	and ask to try again.
+	}
