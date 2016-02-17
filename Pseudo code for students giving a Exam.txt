@@ -1,0 +1,27 @@
+
+----Student
+{
+// After Login Successfully--
+
+Select Which Examination He want to Take out of several examination .
+{
+	WHile (Time Up || All Question solved )
+	{
+		Choose The Department
+		Attempt To Solve Question Displayed
+		{
+			Mark option Which He Thinks Is Correct.
+		}
+			Go To the Next Question.
+	}
+	If (Any Question He Thinks he Marked Incorrect)
+	{
+	Go to that Question number.
+	Update Selected Answer.
+
+	}
+	else
+	{
+	push finish exam button.
+	wait for result.
+	}
