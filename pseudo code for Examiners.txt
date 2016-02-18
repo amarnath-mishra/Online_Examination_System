@@ -1,0 +1,12 @@
+Examiner
+{
+Examiner First selects its Department
+{
+//then Several options Will Come 
+1.Add Question--here he can add any question related to that department.
+		Add all 4 Options for that question.
+		fit correct option in the DataBase.
+
+2.Delete Question-Select Any Question
+		Press Delete Button.
+		Come Back.
