@@ -7,10 +7,19 @@ Select Which Examination He want to Take out of several examination .
 {
 	WHile (Time Up || All Question solved )
 	{
-		Choose The Department
+		Choose The Department 
+		show questions related to that department
+		pick any question number.
 		Attempt To Solve Question Displayed
 		{
+			if student know the answer
+			{
 			Mark option Which He Thinks Is Correct.
+			}
+			else
+			{
+			skip that question;
+			}
 		}
 			Go To the Next Question.
 	}
@@ -23,5 +32,8 @@ Select Which Examination He want to Take out of several examination .
 	else
 	{
 	push finish exam button.
-	wait for result.
+	
 	}
+}
+
+Wait for the result to be displayed.
