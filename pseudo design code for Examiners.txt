@@ -1,0 +1,38 @@
+Examiner
+{
+
+Examiner First selects its Department
+{
+//then Several options Will Come 
+//for Example
+
+1.Add Question--here he can add any question related to that department.
+
+		click on add question button
+		type the question
+		Add all 4 Options for that question.
+		Add correct option in the DataBase.
+		Add Marks associated with that question.
+		Add negative marking for wrong answers.(If applicable).
+	    	press submit button.
+
+2.Delete Question-
+
+		click on any question number.
+		click on delete question button.
+	    	press submit button.
+		
+3.Update Question-
+		click on any question number.
+		view that question.
+		Press Update Button.
+		Change At whatever Place change is needed.
+		Press Final update.
+
+4.View Question--
+		Select Any Question
+		click on any question number.
+		Press View question Button.
+		See the Question and all 4 answers of that Examiner.
+
+}
