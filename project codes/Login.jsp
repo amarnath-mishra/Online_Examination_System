@@ -25,5 +25,41 @@
 		out.println("Invalid Session");
 	}
 	
+	/*  // Create cookies for user name.      
+   Cookie userName = new Cookie("user",
+ 			  request.getParameter("user"));
+
+   // Add both the cookies in the response header.
+   response.addCookie(userName);*/
+
+	   while(result.next())
+	   {
+		   a= result.getString("uname");
+		   c= result.getString("password");	   
+		   if(a.equals(d))
+		   {
+			   if(g.equals(c))
+			   {
+				   /*HttpSession session = getSession(false);
+				   if(session == null){
+					   session = request.getSession();
+				   }else{
+					    session.invalidate();
+						session = request.getSession();
+				   }*/
+				   session.setAttribute( "user_name", d);
+				   session.setAttribute("refresh_count","2");
+			// New location to be redirected
+   String site = new String("users.jsp");
+   response.setStatus(response.SC_MOVED_TEMPORARILY);
+   response.setHeader("Location", site); 		
+			   } 
+			   
+		   }
+		 
+	   }
+	   connect.close();
+	out.println("invalid user name or password");
+	
 </body>
 </html>
