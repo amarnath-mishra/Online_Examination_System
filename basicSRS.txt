@@ -1,0 +1,196 @@
+
+Software Requirement Specification--
+
+1.Introduction--
+My Project is on Online Examination System, which is a software application which allows a particular company or institute to arrange, conduct and manage any objective examination via online.
+The purpose of this SRS document is to write the functional and non-functional user or system requirements that represent the characteristics of On-Line Exam System.
+
+The scope and limitation of this system is:
+1- The on-line exam system design to educational institutes.
+2-Hold all operation and generate reports to student, teachers and administrator.
+3-Support multiple choices questions.
+4-Allow the student to pro-choice the answer and to see his mark.
+5-Verify a security, authority and safety.
+
+
+2. User Requirements Definition
+
+The user requirement for this system is to make the system fast, flexible, less prone to error, reduce expenses and save the time.
+-- Time can be saved by scheduling the exams, if it is available a question bank to store questions for different subjects.
+-- A system can be given a mark by checking the students answers, and give the result as soon as students finish his exam.
+-- A facility to generate a result chart as pre required without manual interface.
+-- The system should have records of students and faculty that can be access to the system which can be used only for the authorized person.
+-- The system should be more secure for management user records and more reliable to work at any conditions.
+
+=> System Requirement Specification:
+
+Functional System Requirement:
+This section gives a functional requirement that applicable to the On-Line Exam system. There are three sub modules in this phase.
+1. Candidate module.
+2. Examiner module.
+3. Administrator module.
+
+The functionality of each module is as follows:
+
+1. Candidate module: The candidate will logon to the software and take his examination. He can also check his previous examinations marks and his details. The candidate will get result immediately after the completion of the examination.
+
+2. Examiner module: The database is prepared & loaded into the software. Selection for examination can be done language wise by the examiner. The results will be displayed immediately after completion of the examination.
+
+3. Administrator module: The administrator collects all the results after successful completion of the examination and sends to the headquarters as and when required.
+
+The features that are available to the Administrator are:
+1. The administrator has the full-fledged rights over the OES.
+2. Can create/delete an account.
+3. Can view the accounts.
+4. Can change the password.
+5. Can hide any kind of features from the both of users.
+6. Insert/delete/edit the information of available on OES.
+7. Can access all the accounts of the faculty members/students.
+
+The features available to the Students are:
+1. Can view the different categories of Test available in their account.
+2.Can change password.
+3. Can view their marks.
+4. Can view the various reading material.
+5.Can view and modify its profile but can modify it to some limited range.
+
+The features available to the Examiner are:
+1. Can view the different categories of Test conducted by users.
+2. Can change password.
+3.Can view their marks.
+4.Can view and modify Results.
+
+Used Tools-
+Language/Scripts for web development - JSP,HTML5,Java Scripts
+Server - Apache Tomcat 
+DataBase- MySQL
+
+
+PRODUCT DESCRIPTION
+	Features:
+		Client Site:
+			-Home Page
+-Sign in and Sign up
+	-user Details
+
+-Exam search
+	-department
+	-date
+	-subjects
+
+-Give Exam
+	-select department/subject
+	-select question number
+		-Choose correct option 
+	-Go to next question
+	-Update any answer
+
+-Conduct Exam (Examiner)
+	-select department
+	-Add Questions
+	-Add Options
+	-Select correct options
+	-Update Questions
+
+-Exam instructions
+
+
+Home Page: Like all websites available online, the user can access the user home page of the Flight Booking System website, after he logs into the system. Here, if he is a student then he can search for exams and he can select a exam as per his choice and see the details.
+
+Login and Register: Online Examination System also comes with the students’ registration details page, where the student can enter his details and register. He can also create a 'username' and 'password'. Moreover, he will also be able to modify his details later on.
+
+Search Exams: The student can also search for the Exams available and can find the best Exam according to his choice and department.
+
+Give Exam: The student can select a department and then see the different question with their question number and 4 possible options associated with that question, student can select any 1 option which he thinks that it might be correct.
+
+See Result: After final done with the examination immediately students will be able to see their final score in that exam.
+
+Exam Instructions: The website also provides instructions to the students on rules for the exams, and give help instructions in case is any student is not comfortable with online exams. 
+
+Finish exam: If user is done or want to finish exam in between the exam period, then he can click on finish button and quit and see the marks, but if he/she quit ones then he/she, further will not be  able proceed in that particular exam.
+
+
+
+
+Examiners /admin Site:
+
+
+
+Login: Admin level login and Examiner’s login is different than student’s login. Admins are privileged to create exams and departments and check different student’s information and his/her results, while 
+
+Add/modify questions: Examiners can add questions related to their department and provide possible options for that questions along with a correct option in the question bank database.
+
+Add/modify Department info: Admin should update the changes Exam information from time to time. 
+
+Modify/Cancel Exam: Admin can cancel or modify Exam for any important reason.
+
+Result: Admin is able to see student’s marks along with their information
+
+SPECIFIC REQUIREMENTS:
+
+	External Interfaces:
+?	User Interface
+?	Hardware Interface
+?	Software Interface
+
+User Interface:
+	Online Examination System consists of two types of users – Customer and Admin. Both uses graphical user interface. They can excess the application with different privileges given above in the feature and use cases.
+
+Hardware Interface:
+
+Software Interface:
+	The Product is designed in web based application through JSP, in windows. 
+
+It will use MySQL for database. It will include HTML, and JavaScript etc for frontend.
+
+
+FUNCTIONAL REQUIREMENTS:
+
+1.	User Registration
+•	Description: New student/examiner has to register with necessary details to book a give/conduct a exam.
+•	Actor: User
+•	Input: The user has to provide all the necessary details present in the registration form based on authorisation.
+•	Output: All the details entered will be verified and accepted by the system into the database.
+2.	User Login
+•	Description: student/examiner/admin logs in to the application
+•	Actor: User-( student/examiner/admin)
+•	Input: The user provides User Id and password for login
+•	Output: User will be verified for authentication with the provided credentials. If those are matched, user is logged in. Otherwise, application returns login page with message of invalid credentials.
+
+3.	Contact Us
+•	Description: student contacts the admin for any information or any complaint.
+•	Actor: student
+•	Input: User enters the complaint information with his credentials.
+•	Output: The Application generate a complaint Id after user is verified and information is provided to Admin to resolve.
+
+
+
+Technologies used-
+
+Front end-
+	HTML5
+	CSS
+	JAVASCRIPT
+	BOOTSTRAP
+
+Back End-
+	MySQL
+	JDBC
+
+Software-
+	IDE- Eclipse
+	Server- Apache Tomcat 8.0
+
+Tools used for modelling different diagrams:
+•	ArgoUML for use case diagram ,class diagram
+•	Visual paradigm for sequence, state, and activity diagrams and Data flow diagrams. 
+	
+
+
+
+
+
+
+
+
+
